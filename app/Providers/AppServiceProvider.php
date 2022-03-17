@@ -32,7 +32,7 @@ class AppServiceProvider extends ServiceProvider
         }
         $appType = env('CLIENT_TYPE');
         $setting = MetaSettings::firstWhere('client', env('CLIENT_ID'));
-        $design = Design::firstWhere(['client' => env('CLIENT_ID'), 'form' => $setting->form ?? '']);
+        $design = Design::firstWhere(['client' => env('CLIENT_ID'), 'form' => $setting->form ?? 'form-1']);
         View::share(['app_type' => $appType,'design' => $design, 'setting' => $setting]);
     }
 }

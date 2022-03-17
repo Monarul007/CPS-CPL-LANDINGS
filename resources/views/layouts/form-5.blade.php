@@ -75,6 +75,7 @@
                     <div class="form-group">
                         <select class="form-control" name="sex" id="sex">
                             <option value="" selected>I am a</option>
+                            <option value="male">Male</option>
                             <option value="female">Female</option>
                             <option value="couple">Couple</option>
                         </select>

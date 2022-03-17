@@ -372,7 +372,7 @@
           </div>
         </div>
       </div>
-      @if($app_type === 'CPS')
+      @if($app_type == 'CPL')
       <div class="mt-16 text-center">
         <a href="https://hushcupid.com/login" class="">Not now, take me to the free area.</a>
       </div>

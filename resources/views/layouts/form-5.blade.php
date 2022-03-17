@@ -14,6 +14,7 @@
     .form-control{
         background-color: transparent !important;
         border-radius: 25px;
+        color: white !important;
     }
     .form-control::-moz-placeholder {
         color: white;

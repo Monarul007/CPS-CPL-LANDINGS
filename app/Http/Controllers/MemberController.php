@@ -62,6 +62,14 @@ class MemberController extends Controller
             'password' => ['required', Password::defaults()],
         ]);
 
+        if(empty($request->matchSex)){
+            if($request->sex = 'male'){
+                $request->matchSex = 'female';
+            }else{
+                $request->matchSex = 'male';
+            }
+        }
+
         $sPassword = $request->password;
         $password = $this->hashPwd($sPassword);
         $current_date = Carbon::now();
@@ -74,9 +82,9 @@ class MemberController extends Controller
             'password' => $password,
             'firstName' => $request->firstName,
             'birthDate' => $request->birthDate,
-            'sex' => $request->sex,
-            'matchSex' => $request->matchSex,
-            'reference' => "LoneelyMeet.com",
+            'sex' => $request->sex ?? 'male',
+            'matchSex' => $request->matchSex ?? 'female',
+            'reference' => env('CLIENT_ID'),
             'ip' => $request->ip(),
             'hashValidation' => Hash::make($sPassword),
             'joinDate' => $current_date,

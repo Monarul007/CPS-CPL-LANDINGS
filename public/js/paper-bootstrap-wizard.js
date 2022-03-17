@@ -28,7 +28,7 @@ transparent = true;
                 sex: {
         		      required: true
         		    },
-        		    'matchSex[]': {
+        		    matchSex: {
         		      required: true
         		    },
         		    birthDate: {

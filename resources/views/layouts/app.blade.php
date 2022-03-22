@@ -60,7 +60,7 @@
 {{--            </header>--}}
 
             <!-- Page Content -->
-            <main class="min-h-screen bg-no-repeat bg-cover bg-right-bottom">body_bg)) style="background-image: url('{{ asset('storage/images/'.$design->body_bg) }}')" > @else style="background-image: url('https://images.pexels.com/photos/2632670/pexels-photo-2632670.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');">@endif
+            <main class="min-h-screen bg-no-repeat bg-cover bg-right-bottom" @if(!empty($design->body_bg)) style="background-image: url('{{ asset('storage/images/'.$design->body_bg) }}')" > @else style="background-image: url('https://images.pexels.com/photos/2632670/pexels-photo-2632670.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260'); background-size: cover; background-repeat: no-repeat; background-position: right bottom !important;">@endif
                 {{ $slot }}
             </main>
         </div>

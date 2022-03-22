@@ -28,7 +28,7 @@ Route::middleware(['auth:sanctum', 'verified', 'nonPayingCustomer'])->get('/subs
     if(isset($request->id)){
         $id = $request->id;
     }else{
-        $id = 'price_1Kb1muLzZgjLiNkCZeAfcS6m';
+        $id = 'price_1KavbCLzZgjLiNkC909Wommg';
     }
     return view('subscribe', [
         'intent' => auth()->user()->createSetupIntent(),

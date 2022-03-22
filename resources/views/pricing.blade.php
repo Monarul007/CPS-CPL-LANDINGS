@@ -236,7 +236,7 @@
             <span class="plan-title">QUICK HOOK UP</span>
             <div class="price-circle">
               <span class="price-title">
-                <small>$</small><span>7.00</span>
+                <small>$</small><span>0.99</span>
               </span>
               <span class="info">/ Week</span>
             </div>
@@ -272,7 +272,7 @@
             <span class="plan-title">ECO PLAN</span>
             <div class="price-circle">
               <span class="price-title">
-                <small>$</small><span>28.00</span>
+                <small>$</small><span>3.00</span>
               </span>
               <span class="info">/ Month</span>
             </div>
@@ -306,10 +306,10 @@
         <div class="pricing-card pro">
           <div class="popular">POPULAR</div>
           <div class="pricing-header">
-            <span class="plan-title">BEST VALUE</span>
+            <span class="plan-title">MOST POPULAR</span>
             <div class="price-circle">
               <span class="price-title">
-                <small>$</small><span>80.00</span>
+                <small>$</small><span>5.00</span>
               </span>
               <span class="info">/ 3 Months</span>
             </div>
@@ -342,10 +342,10 @@
       <div class="column">
         <div class="pricing-card business">
           <div class="pricing-header">
-            <span class="plan-title">MOST POPULAR</span>
+            <span class="plan-title">BEST VALUE</span>
             <div class="price-circle">
               <span class="price-title">
-                <small>$</small><span>150.00</span>
+                <small>$</small><span>7.00</span>
               </span>
               <span class="info">/ 6 Months</span>
             </div>

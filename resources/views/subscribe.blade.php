@@ -30,12 +30,14 @@
                                 <!-- Used to display form errors. -->
                                 <div id="card-errors" role="alert"></div>
                             </div>
-        
+
+                            <span>By submitting this form, you certify that you are 18 years of age or older, agree to the <a href="https://hushcupid.com/terms">terms & conditions</a> and have read the <a href="https://hushcupid.com/pages/details/?page=2">privacy poclicy.</a> </span>
+
                             <x-button class="mt-4">
                                 {{ __('Subscribe Now') }}
                             </x-button>
-                    </form>
-                </div>
+                        </form>
+                    </div>
                 </div>
             
                 <div class="text-white my-2 px-1 w-full overflow-hidden sm:my-2 sm:px-2 xs:w-1 sm:w-1 md:w-1/2 lg:w-1/2 xl:w-1/2">

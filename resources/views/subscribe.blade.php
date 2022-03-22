@@ -105,7 +105,7 @@
 
     <!-- Container -->
     <div class="container mx-auto">
-        <div class="flex justify-center md:px-6 my-12">
+        <div class="flex justify-center md:px-6 py-12">
             <!-- Row -->
             <div class="w-full xl:w-3/4 lg:w-11/12 flex">
                 <!-- Col -->

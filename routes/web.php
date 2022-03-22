@@ -30,9 +30,15 @@ Route::middleware(['auth:sanctum', 'verified', 'nonPayingCustomer'])->get('/subs
     }else{
         $id = 'price_1KavbCLzZgjLiNkC909Wommg';
     }
+    $stripe = new \Stripe\StripeClient(env('STRIPE_SECRET'));
+    $plan = $stripe->plans->retrieve(
+        $id,
+        []
+    );
     return view('subscribe', [
         'intent' => auth()->user()->createSetupIntent(),
         'id' => $id,
+        'plan' => $plan,
     ]);
 })->name('subscribe');
 

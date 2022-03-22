@@ -26,7 +26,7 @@
             .StripeElement {
             box-sizing: border-box;
             height: 40px;
-            min-width: 345px !important;
+            min-width: 280px !important;
             padding: 10px 12px;
             border: 1px solid transparent;
             border-radius: 4px;
@@ -60,7 +60,7 @@
 {{--            </header>--}}
 
             <!-- Page Content -->
-            <main>
+            <main @if(!empty($design->body_bg)) style="background-image: url('{{ asset('storage/images/'.$design->body_bg) }}')" > @else style="background-image: url('https://images.pexels.com/photos/2632670/pexels-photo-2632670.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260'); background-size: cover; background-repeat: no-repeat; background-position: right bottom !important;">@endif
                 {{ $slot }}
             </main>
         </div>

@@ -4,6 +4,7 @@
     }
     .wizard-card{
         background-color: transparent !important;
+        box-shadow: inset 2000px 0 0 0 rgb(0 0 0 / 25%);
     }
     .wizard-header{
         padding-top: 0 !important;

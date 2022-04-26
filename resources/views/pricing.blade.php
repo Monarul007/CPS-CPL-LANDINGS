@@ -200,12 +200,12 @@
         	 margin: 0;
         	 border-bottom: 1px solid #f2f2f2;
         }
-         .pricing-card .buy-button-box {
+         .pricing-card .buy-button-box, .buy-button-box {
         	 width: 100%;
         	 float: left;
         	 margin-top: 30px;
         }
-         .pricing-card .buy-button-box .buy-now {
+         .pricing-card .buy-button-box .buy-now, .buy-now {
         	 text-decoration: none;
         	 color: white;
         	 padding: 10px 30px;
@@ -230,8 +230,8 @@
     </div>
 
     @if($app_type == 'CPL')
-      <div class="mt-16 text-center">
-        <a href="https://hushcupid.com/login" class="fw-bold text-decoration-underline">Not now, take me to the free area.</a>
+      <div class="buy-button-box text-center mt-5">
+        <a href="https://hushcupid.com/login" class="buy-now">Not now, take me to the free area.</a>
       </div>
     @endif
 

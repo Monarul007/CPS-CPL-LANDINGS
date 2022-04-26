@@ -229,6 +229,12 @@
       @endif
     </div>
 
+    @if($app_type == 'CPL')
+      <div class="mt-16 text-center">
+        <a href="https://hushcupid.com/login" class="fw-bold text-decoration-underline">Not now, take me to the free area.</a>
+      </div>
+    @endif
+
     <div class="container py-5">
       <div class="column">
         <div class="pricing-card basic">
@@ -236,9 +242,9 @@
             <span class="plan-title">QUICK HOOK UP</span>
             <div class="price-circle">
               <span class="price-title">
-                <small>$</small><span>0.99</span>
+                <small>$</small><span>0.00</span>
               </span>
-              <span class="info">/ Week</span>
+              <span class="info">/ 1 Day</span>
             </div>
           </div>
           <div class="badge-box">
@@ -272,9 +278,9 @@
             <span class="plan-title">ECO PLAN</span>
             <div class="price-circle">
               <span class="price-title">
-                <small>$</small><span>3.00</span>
+                <small>$</small><span>1.00</span>
               </span>
-              <span class="info">/ Month</span>
+              <span class="info">/ 7 Days</span>
             </div>
           </div>
           <div class="badge-box">
@@ -309,9 +315,9 @@
             <span class="plan-title">MOST POPULAR</span>
             <div class="price-circle">
               <span class="price-title">
-                <small>$</small><span>5.00</span>
+                <small>$</small><span>3.00</span>
               </span>
-              <span class="info">/ 3 Months</span>
+              <span class="info">/ 15 Days</span>
             </div>
           </div>
           <div class="badge-box">
@@ -347,7 +353,7 @@
               <span class="price-title">
                 <small>$</small><span>7.00</span>
               </span>
-              <span class="info">/ 6 Months</span>
+              <span class="info">/ 30 Days</span>
             </div>
           </div>
           <div class="badge-box">
@@ -375,11 +381,6 @@
           </div>
         </div>
       </div>
-      @if($app_type == 'CPL')
-      <div class="mt-16 text-center">
-        <a href="https://hushcupid.com/login" class="">Not now, take me to the free area.</a>
-      </div>
-      @endif
     </div>
     @push('scripts')
         <script>

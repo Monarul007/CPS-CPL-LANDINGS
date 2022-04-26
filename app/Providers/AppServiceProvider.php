@@ -27,9 +27,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if (env('APP_ENV') !== 'local') {
-            URL::forceScheme('https');
-        }
+        URL::forceScheme('https');
+        
         $appType = env('CLIENT_TYPE');
         $setting = MetaSettings::firstWhere('client', env('CLIENT_ID'));
         $design = Design::firstWhere(['client' => env('CLIENT_ID'), 'form' => $setting->form ?? 'form-1']);
